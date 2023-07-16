@@ -11,6 +11,14 @@ def primenumber(num1):
             break
     else:
         print("is a prime number")
+def factorial(num2):
+    factorial = 1
+    for i in range(1, num2 + 1):
+        factorial = factorial * i
+    print("Factorial of ", num2, " is :", factorial)
+def sqroot(num1):
+    sqrt = num1 ** 0.5
+    print("square root:", sqrt)
 def calculator(num1,num2,ope):
         if ope == "add":
             ans=num1+num2
@@ -27,7 +35,11 @@ def calculator(num1,num2,ope):
         elif ope == "isevenodd":
             evenorodd(num1)
         elif ope == "primenumber":
-            primenumber(num1)
+            primenumber(num2)
+        elif ope == "factorial":
+            factorial(num2)
+        elif ope == "sqrtroot":
+            sqroot(num1)
         else:
             print("Invalid choice")
 n1=int(input("Enter the first number:"))
