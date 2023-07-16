@@ -19,6 +19,12 @@ def factorial(num2):
 def sqroot(num1):
     sqrt = num1 ** 0.5
     print("square root:", sqrt)
+def square(num2):
+    square = num2 * num2
+    print("\num2", "Square of number is :", square)
+def cube(num1):
+    cube = num1 * num1 * num1
+    print("\num1", "cube of number is :", cube)
 def calculator(num1,num2,ope):
         if ope == "add":
             ans=num1+num2
@@ -40,6 +46,10 @@ def calculator(num1,num2,ope):
             factorial(num2)
         elif ope == "sqrtroot":
             sqroot(num1)
+        elif ope == "square":
+            square(num2)
+        elif ope == "cube":
+            cube(num1)
         else:
             print("Invalid choice")
 n1=int(input("Enter the first number:"))
