@@ -1,6 +1,6 @@
 choice = "y"
 while choice == "y":
-    num = 13
+    num = 25
     n1, n2 = 0, 1
     print("Fibonacci Series:", n1, n2, end=" ")
     for i in range(2, num):

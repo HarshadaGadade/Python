@@ -25,6 +25,18 @@ def square(num2):
 def cube(num1):
     cube = num1 * num1 * num1
     print("\num1", "cube of number is :", cube)
+def amstrong(num1):
+    order = len(str(num1))
+    sum = 0
+    temp = num1
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //= 10
+    if num1 == sum:
+        print(num1, "is an Armstrong number")
+    else:
+        print(num1, "is not an Armstrong number")
 def calculator(num1,num2,ope):
         if ope == "add":
             ans=num1+num2
@@ -50,6 +62,8 @@ def calculator(num1,num2,ope):
             square(num2)
         elif ope == "cube":
             cube(num1)
+        elif ope == "amstrong":
+            amstrong(num1)
         else:
             print("Invalid choice")
 n1=int(input("Enter the first number:"))
