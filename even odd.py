@@ -7,4 +7,3 @@ while choice=="y":
     else:
         print("Entered number is odd",n)
     choice = input("do u want to continue y/n:")
-
